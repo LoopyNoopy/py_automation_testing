@@ -4,13 +4,18 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 def test_codebase_find_ticket():
+    with open("D:\codebaseLogin.txt") as loginDetails:
+        lines = loginDetails.readlines()
+        url = lines[0].rstrip("\n")
+        email = lines[1].rstrip("\n")
+        thePassword = lines[2].rstrip("\n")
     browser = webdriver.Chrome()
     browser.set_window_size(1482, 996)
-    browser.get('https://code.silhouettesoftware.com/login')
+    browser.get(url)
     username = browser.find_element(By.ID,"username")
-    username.send_keys("dburgess@silhouettesoftware.com")
+    username.send_keys(email)
     password = browser.find_element(By.NAME,"password")
-    password.send_keys("LaGqkqCQJV4F2CE" + Keys.RETURN)
+    password.send_keys(thePassword + Keys.RETURN)
     browser.find_element(By.XPATH,"//*[text()='Your Projects']").click()
     browser.find_element(By.XPATH, "//*[text()='Studio']").click()
     browser.find_element(By.XPATH, "//*[text()='Tickets']").click()

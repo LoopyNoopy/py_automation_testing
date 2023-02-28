@@ -44,8 +44,8 @@ def codebase_find_ticket(browser):
     assert "Cake" in browser.title
     browser.quit()
 
-codebase_find_ticket(firefox)
+#codebase_find_ticket(firefox)
 codebase_find_ticket(chrome)
 
-confirm_yahoo_title(firefox)
+#confirm_yahoo_title(firefox)
 confirm_yahoo_title(chrome)
