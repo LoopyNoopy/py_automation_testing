@@ -1,10 +1,15 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from webdriver_manager.firefox import GeckoDriverManager
+from webdriver_manager.chrome import ChromeDriverManager
+
 import time
 
 chrome = webdriver.Chrome()
-firefox = webdriver.Firefox()
+firefox = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+
 
 def confirm_yahoo_title(driver):
     driver.get('http://www.yahoo.com')
@@ -53,4 +58,4 @@ def codebase_find_ticket(browser):
 codebase_find_ticket(chrome)
 
 #confirm_yahoo_title(firefox)
-confirm_yahoo_title(chrome)
+#confirm_yahoo_title(chrome)

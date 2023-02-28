@@ -472,3 +472,223 @@ JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error:
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1677576921310	geckodriver	INFO	Listening on 127.0.0.1:62215
+1677576924394	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62216" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofilemVDr6a"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677576924668	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677576924672	Marionette	INFO	Listening on port 62223
+Read port: 62223
+WebDriver BiDi listening on ws://127.0.0.1:62216
+1677576924765	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofilemVDr6a\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62216/devtools/browser/ff533761-78b0-4799-9ee6-edcbaa75f05f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://code.silhouettesoftware.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://code.silhouettesoftware.com."
+1677576933186	Marionette	INFO	Stopped listening on port 62223
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Dynamically enable window occlusion 1
+1677578666641	geckodriver	INFO	Listening on 127.0.0.1:54154
+1677578669697	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54156" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofile6UfY10"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677578670012	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677578670015	Marionette	INFO	Listening on port 54163
+Read port: 54163
+WebDriver BiDi listening on ws://127.0.0.1:54156
+1677578670095	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofile6UfY10\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54156/devtools/browser/8fb8fe83-b5b6-4502-b417-ee5a9392e152
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1677579641530	Marionette	INFO	Stopped listening on port 54163
+Dynamically enable window occlusion 1
+te" "--remote-debugging-port" "54213" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofileste8TI"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677578684488	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677578684491	Marionette	INFO	Listening on port 54220
+WebDriver BiDi listening on ws://127.0.0.1:54213
+Read port: 54220
+1677578684680	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofileste8TI\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54213/devtools/browser/20e3731d-200a-4ebe-a2a5-fa56106fadb7
+1677578786642	geckodriver	INFO	Listening on 127.0.0.1:50393
+1677578789703	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50394" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofileVcgR5V"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677578789972	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677578789975	Marionette	INFO	Listening on port 50401
+Read port: 50401
+WebDriver BiDi listening on ws://127.0.0.1:50394
+1677578790066	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofileVcgR5V\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50394/devtools/browser/d2c54f48-6728-411b-aff9-49bbcc4182a8
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://code.silhouettesoftware.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://code.silhouettesoftware.com."
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://devtools/shared/protocol/Front.js, line 106: Error: Connection closed, pending request to server0.conn0.windowGlobal6442450946/domnode49, type setNodeValue failed
+
+Request stack:
+request@resource://devtools/shared/protocol/Front.js:300:14
+generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19
+showTextEditor/done/</<@resource://devtools/client/inspector/markup/views/text-editor.js:103:25
+do@resource://devtools/client/shared/undo.js:70:16
+endBatch@resource://devtools/client/shared/undo.js:81:11
+do@resource://devtools/client/shared/undo.js:93:10
+showTextEditor/done/<@resource://devtools/client/inspector/markup/views/text-editor.js:101:31
+
+1677579640110	Marionette	INFO	Stopped listening on port 50401
+Dynamically enable window occlusion 1
+)))
+DevTools listening on ws://127.0.0.1:50442/devtools/browser/d01f1e0f-9264-49d7-9d68-e407de80da3a
+1677578803512	Marionette	INFO	Stopped listening on port 50450
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Dynamically enable window occlusion 1
+1677578806929	geckodriver	INFO	Listening on 127.0.0.1:50550
+1677578810054	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50551" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofilehnnd7F"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677578810319	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677578810322	Marionette	INFO	Listening on port 50558
+WebDriver BiDi listening on ws://127.0.0.1:50551
+Read port: 50558
+1677578810505	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofilehnnd7F\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50551/devtools/browser/a88e3cc6-28d3-474d-8809-b978d81a48d9
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://consent.yahoo.com."
+JavaScript warning: https://pagead2.googlesyndication.com/bg/tZsXipaSZXHHcL3TzAhvrOIdSpwDyJfWMGTb_6xT6xM.js line 2 > eval line 4766 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/tZsXipaSZXHHcL3TzAhvrOIdSpwDyJfWMGTb_6xT6xM.js line 2 > eval line 2933 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/tZsXipaSZXHHcL3TzAhvrOIdSpwDyJfWMGTb_6xT6xM.js line 2 > eval line 2781 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/tZsXipaSZXHHcL3TzAhvrOIdSpwDyJfWMGTb_6xT6xM.js line 2 > eval line 4887 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/tZsXipaSZXHHcL3TzAhvrOIdSpwDyJfWMGTb_6xT6xM.js line 2 > eval line 2703 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: 7
+JavaScript warning: https://cdn.js7k.com/ix/talon-1.0.40.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.js7k.com/ix/talon-1.0.40.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/tZsXipaSZXHHcL3TzAhvrOIdSpwDyJfWMGTb_6xT6xM.js line 2 > eval line 6803 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.js7k.com/ix/talon-1.0.40.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/tZsXipaSZXHHcL3TzAhvrOIdSpwDyJfWMGTb_6xT6xM.js line 2 > eval line 7412 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: 7
+JavaScript warning: https://pagead2.googlesyndication.com/bg/tZsXipaSZXHHcL3TzAhvrOIdSpwDyJfWMGTb_6xT6xM.js line 2 > eval line 5463 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uk.yahoo.com."
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.js7k.com/ix/talon-1.0.40.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.js7k.com/ix/talon-1.0.40.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1677578864417	Marionette	INFO	Stopped listening on port 50558
+Dynamically enable window occlusion 1
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1677579105717	geckodriver	INFO	Listening on 127.0.0.1:53423
+1677579108795	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53424" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofileSkdpZy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677579109064	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677579109067	Marionette	INFO	Listening on port 53431
+Read port: 53431
+WebDriver BiDi listening on ws://127.0.0.1:53424
+1677579109156	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofileSkdpZy\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53424/devtools/browser/c1d87836-cdcd-42de-b156-7366168fca4a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://code.silhouettesoftware.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://code.silhouettesoftware.com."
+1677579116747	Marionette	INFO	Stopped listening on port 53431
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Dynamically enable window occlusion 1
+1677579124432	geckodriver	INFO	Listening on 127.0.0.1:51711
+1677579127502	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51712" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofileb3J5ti"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677579127785	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677579127788	Marionette	INFO	Listening on port 51719
+Read port: 51719
+WebDriver BiDi listening on ws://127.0.0.1:51712
+1677579127864	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofileb3J5ti\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51712/devtools/browser/3792a7c8-5bf6-4f60-8c62-1909b196e45e
+1677579135598	Marionette	INFO	Stopped listening on port 51719
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Dynamically enable window occlusion 1
+1677579139051	geckodriver	INFO	Listening on 127.0.0.1:51821
+1677579142118	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51822" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofileAxupwN"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677579142383	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677579142386	Marionette	INFO	Listening on port 51829
+WebDriver BiDi listening on ws://127.0.0.1:51822
+Read port: 51829
+1677579142537	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofileAxupwN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51822/devtools/browser/e8ca087d-6d92-4d8f-979e-4f6be6041bed
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://consent.yahoo.com."
+JavaScript warning: https://pagead2.googlesyndication.com/bg/tZsXipaSZXHHcL3TzAhvrOIdSpwDyJfWMGTb_6xT6xM.js line 2 > eval line 2945 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/tZsXipaSZXHHcL3TzAhvrOIdSpwDyJfWMGTb_6xT6xM.js line 2 > eval line 5081 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/tZsXipaSZXHHcL3TzAhvrOIdSpwDyJfWMGTb_6xT6xM.js line 2 > eval line 4082 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uk.yahoo.com."
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.js7k.com/ix/talon-1.0.40.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.js7k.com/ix/talon-1.0.40.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.js7k.com/ix/talon-1.0.40.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1677579160170	Marionette	INFO	Stopped listening on port 51829
+Dynamically enable window occlusion 1
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1677579414281	geckodriver	INFO	Listening on 127.0.0.1:52413
+1677579417364	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52414" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofile6Iodhr"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677579417656	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677579417659	Marionette	INFO	Listening on port 52421
+Read port: 52421
+WebDriver BiDi listening on ws://127.0.0.1:52414
+1677579417740	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofile6Iodhr\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52414/devtools/browser/3404cf03-2f8f-4f8d-b6bf-d57ba958f0c9
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://code.silhouettesoftware.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://code.silhouettesoftware.com."
+1677579426632	Marionette	INFO	Stopped listening on port 52421
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Dynamically enable window occlusion 1
+1677579430198	geckodriver	INFO	Listening on 127.0.0.1:52477
+1677579433228	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52478" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofileHH4GjH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677579433775	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677579433778	Marionette	INFO	Listening on port 52486
+WebDriver BiDi listening on ws://127.0.0.1:52478
+Read port: 52486
+1677579433972	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofileHH4GjH\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52478/devtools/browser/bbb285c0-8d38-475f-bfd8-c479fd339851
+1677579445608	Marionette	INFO	Stopped listening on port 52486
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Dynamically enable window occlusion 1
+1677579453083	geckodriver	INFO	Listening on 127.0.0.1:52593
+1677579456164	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52594" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofileMSw974"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677579456433	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677579456437	Marionette	INFO	Listening on port 52601
+Read port: 52601
+WebDriver BiDi listening on ws://127.0.0.1:52594
+1677579456527	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\dburgess\\AppData\\Local\\Temp\\rust_mozprofileMSw974\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52594/devtools/browser/4828cd6a-2135-45cd-b5a4-78d547cb68ce
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://consent.yahoo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uk.yahoo.com."
+1677579459037	Marionette	INFO	Stopped listening on port 52601
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 693: TypeError: this.tablesData[table] is undefined
