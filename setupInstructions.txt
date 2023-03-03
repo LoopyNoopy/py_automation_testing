@@ -1,5 +1,15 @@
-Download the driver for your browser:
-Chrome: https://chromedriver.chromium.org/downloads
-Firefox: https://github.com/mozilla/geckodriver/releases
-Edge: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
-Internet Explorer: https://www.selenium.dev/downloads/
+Install requirements.txt
+Setup your IDE to use pytest
+PyCharm -
+    Click on python version in bottom right
+    Interpreter settings
+    On left click tools
+    The click "Python Integrated Tools"
+    Ensure either "AutoDetect(Pytest) or manually select pytest"
+To run the code:
+    PyCharm
+    Go to the Terminal tab at the bottom and enter
+    "py.test" - No quotation marks
+
+I am unsure how to do this via visual Studio BUT
+As long as you install the requirements.txt - you should be able to run the "py.test" command in the windows terminal (If opened in the folder)
