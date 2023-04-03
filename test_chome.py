@@ -1,15 +1,20 @@
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromiumService
+from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.core.utils import ChromeType
 import time
 
+
+
 def test_codebase_find_ticket():
+    browser = webdriver.Chrome(service=ChromiumService(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()))
     with open("D:\codebaseLogin.txt") as loginDetails:
         lines = loginDetails.readlines()
         url = lines[0].rstrip("\n")
         email = lines[1].rstrip("\n")
         thePassword = lines[2].rstrip("\n")
-    browser = webdriver.Chrome()
     browser.set_window_size(1482, 996)
     browser.get(url)
     username = browser.find_element(By.ID,"username")
@@ -27,7 +32,7 @@ def test_codebase_find_ticket():
 
 
 def test_silhouetteamerica_signin():
-    browser = webdriver.Chrome()
+    browser = webdriver.Chrome(service=ChromiumService(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()))
     browser.set_window_size(1920,1080)
     browser.get('http://www.silhouetteamerica.com/')
     time.sleep(3)  # Let the user actually see something!
@@ -36,8 +41,7 @@ def test_silhouetteamerica_signin():
 
 
 def test_confirm_yahoo_title():
-    browser = webdriver.Chrome()
-
+    browser = webdriver.Chrome(service=ChromiumService(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()))
     browser.get('http://www.yahoo.com')
     time.sleep(3) # Let the user actually see something!
     browser.find_element(By.NAME,"agree").click()

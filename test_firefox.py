@@ -11,7 +11,7 @@ def test_codebase_find_ticket():
         url = lines[0].rstrip("\n")
         email = lines[1].rstrip("\n")
         thePassword = lines[2].rstrip("\n")
-    browser = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+    browser = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
     browser.set_window_size(1482, 996)
     browser.get(url)
     browser.implicitly_wait(30)
@@ -37,7 +37,7 @@ def test_codebase_find_ticket():
 
 
 def test_silhouetteamerica_signin():
-    browser = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+    browser = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
     browser.set_window_size(1920,1080)
     browser.get('http://www.silhouetteamerica.com/')
     time.sleep(3)  # Let the user actually see something!
@@ -46,8 +46,7 @@ def test_silhouetteamerica_signin():
 
 
 def test_confirm_yahoo_title():
-    browser = webdriver.Firefox(executable_path=GeckoDriverManager().install())
-
+    browser = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
     browser.get('http://www.yahoo.com')
     browser.implicitly_wait(30)
     browser.find_element(By.NAME,"agree").click()
