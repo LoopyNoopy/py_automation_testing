@@ -1,0 +1,15 @@
+test_square.py and test_compare.py
+pytest -m others -v
+
+test_div_by_3_6 and test_div_by_13
+pytest -k divisible -v
+
+test_multiplication
+pytest -k multiplication -v
+
+test_failure
+pytest test_failure.py -v --maxfail 1
+
+pytest -n 3
+
+pytest test_multiplication.py -v --junitxml="result.xml"
