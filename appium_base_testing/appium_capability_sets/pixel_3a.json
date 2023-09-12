@@ -1,0 +1,8 @@
+{
+  "platformName": "Android",
+  "appium:platformVersion": "14",
+  "appium:deviceName": "Pixel 5",
+  "appium:automationName": "UIAutomator2",
+  "appium:noReset": true,
+  "appium:appPackage": "com.SilhouetteSoftware.SilhouetteGo"
+}
