@@ -7,6 +7,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 import time
 
+#TODO selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 110
 chrome = webdriver.Chrome()
 firefox = webdriver.Firefox(executable_path=GeckoDriverManager().install())
 
