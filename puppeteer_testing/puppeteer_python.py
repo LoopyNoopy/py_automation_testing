@@ -10,18 +10,13 @@ import os
 #eval_res, tempfile = js2py.run_file("hey.js")
 #tempfile.wish("GeeksforGeeks")
 
-print("Installing nodeJS LTS")
-os.system("winget install OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements")
-print("Upgrading Node Package Manager to latest")
-os.system("npm install --global npm")
-print("Installing Node Package eXecute")
-os.system("npm install -g npx")
-print("Installing puppeteer")
-os.system("npm i puppeteer")
-print("Installing puppeteer browsers cli")
-os.system("npm i @puppeteer/browsers")
-print("Installed packages")
-os.system("npm list")
+install_puppeteer_commands = ["winget install OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements",
+                              "npm install --global npm",
+                              "npm install -g npx",
+                              "npm i puppeteer",
+                              "npm i @puppeteer/browsers"]
+for command in install_puppeteer_commands:
+    os.system(command)
 print("Installing Firefox through puppeteer")
 os.system("npx @puppeteer/browsers install firefox")
 print("Installing Chrome through puppeteer")
