@@ -2,8 +2,9 @@ import pytest
 import os
 
 
-@pytest.fixture(autouse=True)
+@pytest.fixture(scope="session",autouse=True)
 def browser_install():
+    os.environ['GH_TOKEN'] = "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"
     install_puppeteer_commands = [
         "winget install OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements",
         "winget install -e --id Opera.Opera",
