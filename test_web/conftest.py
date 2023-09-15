@@ -3,8 +3,10 @@ import os
 
 
 @pytest.fixture(scope="session",autouse=True)
-def browser_install():
+def install_requirements():
+    print("Assigning GitHub token")
     os.environ['GH_TOKEN'] = "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"
+    print("Instaling Node, Puppeteer for Chrome and Firefox")
     install_puppeteer_commands = [
         "winget install OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements",
         "winget install -e --id Opera.Opera",
@@ -36,8 +38,3 @@ def get_firefox_version_folder():
 def get_chromedriver_version_folder():
     items = os.listdir("chromedriver")
     return items[0]
-
-@pytest.fixture()
-def get_chicken_nugget():
-    print("chicken")
-    return

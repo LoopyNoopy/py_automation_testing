@@ -1,25 +1,41 @@
 import os
-from selenium import webdriver
-from webdriver_manager.firefox import GeckoDriverManager
+import subprocess
+import asyncio
+import subprocess
+from appium import webdriver
+import pyuac
 
-# Install GeckoDriver and get its path
-gecko_driver_path = GeckoDriverManager().install()
+def find_java_version():
+    items = os.listdir("C:\\Program Files\\Java\\")
+    return items[0]
 
-# Specify the path to the Firefox binary
-firefox_binary = "firefox\\win64-119.0a1\\firefox.exe"
+def install_appium():
+    install_commands = [
+    "winget install OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements",
+    "winget install -e --id Oracle.JDK.19 --accept-package-agreements --accept-source-agreements",
+    "winget install -e --id Google.AndroidStudio --accept-package-agreements --accept-source-agreements",
+    "npm i -g appium@next",
+    "appium driver install uiautomator2"]
+    for command in install_commands:
+        os.system(command)
 
-# Set the environment variable for GeckoDriver
-os.environ['PATH'] = f'{os.environ["PATH"]}:{os.path.dirname(gecko_driver_path)}'
+    subprocess.run(["start", "cmd", "/k", "appium"], shell=True)
 
-# Set up Firefox options
-firefox_options = webdriver.FirefoxOptions()
-firefox_options.binary_location = firefox_binary
+    #Set envrioment variable for JDK version installed
+    os.environ['JAVA_HOME'] = 'C:\\Program Files\\Java\\' + find_java_version()
+    my_value = os.environ.get('JAVA_HOME')
+    if my_value:
+        print(f"The value of JAVA_HOME is: {my_value}")
+    else:
+        print("JAVA_HOME is not set.")
 
-# Create a Firefox WebDriver instance
-firefox_driver = webdriver.Firefox(options=firefox_options)
+    os.environ['ANDROID_HOME'] = "C:\\Users\\"+os.getenv("USERNAME")+"\\AppData\\Local\\Android\\Sdk"
+    my_value = os.environ.get('ANDROID_HOME')
+    if my_value:
+        print(f"The value of ANDROID_HOME is: {my_value}")
+    else:
+        print("ANDROID_HOME is not set.")
 
-# Navigate to a website
-firefox_driver.get("https://www.youtube.com")
 
-# Close the browser
-firefox_driver.quit()
+
+install_appium()
