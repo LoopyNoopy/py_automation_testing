@@ -38,4 +38,25 @@ def install_appium():
 
 
 
-install_appium()
+current_directory = os.getcwd()
+
+print("Current Working Directory:", current_directory)
+
+from pywinauto import application
+import time
+
+# Start the application (replace 'notepad.exe' with the target application)
+app = application.Application(backend="uia").start('C:\Program Files\Android\Android Studio\\bin\studio64.exe', wait_for_idle=True)
+
+# Print control identifiers to the console
+time.sleep(10)
+child_window = app.window(title="Android Studio Setup Wizard")
+child_window.dump_tree()
+
+
+# Optional: Add a delay to observe the output (in seconds)
+import time
+time.sleep(10)
+
+# Close the application
+app.kill()

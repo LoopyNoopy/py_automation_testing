@@ -1,6 +1,13 @@
 import pytest
 import os
 import subprocess
+import requests
+import tqdm
+
+def add_to_path(path):
+    current_path = os.environ.get("PATH", "")
+    new_path = f"{current_path}{os.pathsep}{path}"
+    os.environ["PATH"] = new_path
 
 @pytest.fixture(scope="session",autouse=True)
 def install_requirements():
@@ -13,7 +20,9 @@ def install_requirements():
     for command in install_commands:
         os.system(command)
 
-    subprocess.run(["start", "cmd", "/k", "appium"], shell=True)
+    add_to_path("C:\Users\\" + os.getlogin() + "\\AppData\Local\Android\Sdk\platform-tools")
+    add_to_path("C:\Users\\" + os.getlogin() + "\\AppData\Local\Android\Sdk\cmdline-tools\latest\bin")
+    add_to_path("C:\Users\\" + os.getlogin() + "\\AppData\Local\Android\Sdk\emulator")
 
     # Set envrioment variable for JDK version installed
     os.environ['JAVA_HOME'] = 'C:\\Program Files\\Java\\' + find_java_version()
@@ -30,6 +39,25 @@ def install_requirements():
     else:
         print("ANDROID_HOME is not set.")
 
+    #ToDo - restart the terminal or make these commands work in a new one
+    #ToDo - make this dynamic to the latest version THEN download version based on appium caps
+    os.system('sdkmanager "platforms;android-34"')
+    os.system('sdkmanager "system-images;android-34;google_apis;x86_64"')
+
+    # Start appium in another terminal window, so we can still use the python script
+    subprocess.run(["start", "cmd", "/k", "appium"], shell=True)
+
 def find_java_version():
     items = os.listdir("C:\\Program Files\\Java\\")
     return items[0]
+
+import subprocess
+
+# Define AVD parameters
+avd_name = "pixel_5"
+avd_target = "android-34"  # e.g., "android-30"
+avd_abi = "x86_64"  # e.g., "x86_64" or "armeabi-v7a"
+
+# Create the AVD
+create_avd_command = f"avdmanager create avd -n {avd_name} -k '{avd_target}' --abi {avd_abi}"
+subprocess.run(create_avd_command, shell=True, check=True)
