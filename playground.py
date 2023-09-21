@@ -46,17 +46,20 @@ from pywinauto import application
 import time
 
 # Start the application (replace 'notepad.exe' with the target application)
-app = application.Application(backend="uia").start('C:\Program Files\Android\Android Studio\\bin\studio64.exe', wait_for_idle=True)
+#app = application.Application(backend="uia").start('C:\Program Files\Android\Android Studio\\bin\studio64.exe', wait_for_idle=True)
 
 # Print control identifiers to the console
-time.sleep(10)
-child_window = app.window(title="Android Studio Setup Wizard")
-child_window.dump_tree()
+#time.sleep(10)
+#child_window = app.window(title="Android Studio Setup Wizard")
+#child_window.dump_tree()
 
 
 # Optional: Add a delay to observe the output (in seconds)
 import time
-time.sleep(10)
 
 # Close the application
-app.kill()
+#app.kill()
+
+
+from selenium import webdriver
+from webdriver_manager.firefox import GeckoDriverManager
