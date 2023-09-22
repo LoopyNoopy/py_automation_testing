@@ -34,7 +34,6 @@ def install_requirements():
         os.system(command)
     yield
 
-
 @pytest.fixture()
 def get_chrome_version_folder():
     items = os.listdir("chrome")
