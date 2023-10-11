@@ -40,4 +40,19 @@ def install_requirements():
         os.system(command)
 
 
+os.environ['JAVA_HOME'] = 'C:\\Program Files\\Java\\' + find_java_version()
+my_value = os.environ.get('JAVA_HOME')
+if my_value:
+    print(f"The value of JAVA_HOME is: {my_value}")
+else:
+    print("JAVA_HOME is not set.")
+
+os.environ['ANDROID_HOME'] = "C:\\Users\\" + os.getenv("USERNAME") + "\\AppData\\Local\\Android\\Sdk"
+my_value = os.environ.get('ANDROID_HOME')
+if my_value:
+    print(f"The value of ANDROID_HOME is: {my_value}")
+else:
+    print("ANDROID_HOME is not set.")
+
+
 install_requirements()
