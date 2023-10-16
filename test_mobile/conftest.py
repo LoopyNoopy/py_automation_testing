@@ -12,8 +12,8 @@ def add_to_path(path):
 @pytest.fixture(scope="session",autouse=True)
 def install_requirements():
     install_commands = [
-        "winget install OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements",
         "winget install -e --id Oracle.JDK.19 --accept-package-agreements --accept-source-agreements",
+        "winget install OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements",
         "winget install -e --id Google.AndroidStudio --accept-package-agreements --accept-source-agreements",
         "npm i -g appium@next",
         "appium driver install uiautomator2"]

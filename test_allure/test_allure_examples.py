@@ -6,6 +6,19 @@ import allure
 #pytest --alluredir=allure-results test_allure_examples.py
 #npx allure serve allure-results
 
+
+@allure.epic("Web interface")
+@allure.feature("Essential features")
+@allure.story("Authentication")
+@allure.parent_suite("Tests for web interface")
+@allure.suite("Tests for essential features")
+@allure.sub_suite("Tests for authentication")
+@pytest.mark.category("Chicken")
+@pytest.mark.parametrize("num1, num2, expected", [(1, 2, 3), (2, 3, 5), (5, 5, 10)])
+def test_syntax_fail(num1, num2, expected):
+    result = num1 + num2
+    assert result == expected
+
 @allure.epic("Web interface")
 @allure.feature("Essential features")
 @allure.story("Authentication")
@@ -15,6 +28,102 @@ import allure
 @pytest.mark.category("Chicken")
 @pytest.mark.parametrize("num1, num2, expected", [(1, 2, 3), (2, 3, 5), (5, 5, 10)])
 def test_addition(num1, num2, expected):
+    result = num1 + num2
+    assert result == expected
+
+@allure.epic("Web interface")
+@allure.feature("Essential features")
+@allure.story("Authentication")
+@allure.parent_suite("Tests for web interface")
+@allure.suite("Tests for essential features")
+@allure.sub_suite("Tests for authentication")
+@pytest.mark.category("Chicken")
+@pytest.mark.parametrize("num1, num2, expected", [(1, 2, 3), (2, 3, 5), (5, 5, 10)])
+def test_addition2(num1, num2, expected):
+    result = num1 + num2
+    assert result == expected
+
+@allure.epic("Web interface")
+@allure.feature("Essential features")
+@allure.story("Authentication")
+@allure.parent_suite("Tests for web interface")
+@allure.suite("Tests for essential features")
+@allure.sub_suite("Tests for authentication")
+@pytest.mark.category("Chicken")
+@pytest.mark.parametrize("num1, num2, expected", [(1, 2, 3), (2, 3, 5), (5, 5, 10)])
+def test_addition3(num1, num2, expected):
+    result = num1 + num2
+    assert result == expected
+
+@allure.epic("Web interface")
+@allure.feature("Essential features")
+@allure.story("Authentication")
+@allure.parent_suite("Tests for web interface")
+@allure.suite("Tests for essential features")
+@allure.sub_suite("Tests for authentication")
+@pytest.mark.category("Chicken")
+@pytest.mark.parametrize("num1, num2, expected", [(1, 2, 3), (2, 3, 5), (5, 5, 10)])
+def test_addition3(num1, num2, expected):
+    result = num1 + num2
+    assert result == expected
+
+@allure.epic("Web interface")
+@allure.feature("Essential features")
+@allure.story("Authentication")
+@allure.parent_suite("Tests for web interface")
+@allure.suite("Tests for essential features")
+@allure.sub_suite("Tests for authentication")
+@pytest.mark.category("Chicken")
+@pytest.mark.parametrize("num1, num2, expected", [(1, 2, 3), (2, 3, 5), (5, 5, 10)])
+def test_addition4(num1, num2, expected):
+    result = num1 + num2
+    assert result == expected
+
+@allure.epic("Web interface")
+@allure.feature("Essential features")
+@allure.story("Authentication")
+@allure.parent_suite("Tests for web interface")
+@allure.suite("Tests for essential features")
+@allure.sub_suite("Tests for authentication")
+@pytest.mark.category("Chicken")
+@pytest.mark.parametrize("num1, num2, expected", [(1, 2, 3), (2, 3, 5), (5, 5, 10)])
+def test_additionasd(num1, num2, expected):
+    result = num1 + num2
+    assert result == expected
+
+@allure.epic("Web interface")
+@allure.feature("Essential features")
+@allure.story("Authentication")
+@allure.parent_suite("Tests for web interface")
+@allure.suite("Tests for essential features")
+@allure.sub_suite("Tests for authentication")
+@pytest.mark.category("Chicken")
+@pytest.mark.parametrize("num1, num2, expected", [(1, 2, 3), (2, 3, 5), (5, 5, 10)])
+def test_addition234(num1, num2, expected):
+    result = num1 + num2
+    assert result == expected
+
+@allure.epic("Web interface")
+@allure.feature("Essential features")
+@allure.story("Authentication")
+@allure.parent_suite("Tests for web interface")
+@allure.suite("Tests for essential features")
+@allure.sub_suite("Tests for authentication")
+@pytest.mark.category("Chicken")
+@pytest.mark.parametrize("num1, num2, expected", [(1, 2, 3), (2, 3, 5), (5, 5, 10)])
+def test_addition354(num1, num2, expected):
+    result = num1 + num2
+    assert result == expected
+
+@allure.epic("Web interface")
+@allure.feature("Essential features")
+@allure.story("Authentication")
+@allure.parent_suite("Tests for web interface")
+@allure.suite("Tests for essential features")
+@allure.sub_suite("Tests for authentication")
+@pytest.mark.category("Chicken")
+@pytest.mark.parametrize("num1, num2, expected", [(1, 2, 3), (2, 3, 5), (5, 5, 10)])
+def test_addition567(num1, num2, expected):
     result = num1 + num2
     assert result == expected
 

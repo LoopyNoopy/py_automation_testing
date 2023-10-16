@@ -1,4 +1,4 @@
-selenium>=4.13.0
+selenium>=4.14.0
 webdriver-manager>=3.8.5
 pytest>=7.4.2
 Js2Py>=0.74
@@ -6,3 +6,5 @@ Appium-Python-Client>=3.0.0
 requests>=2.31.0
 tqdm>=4.66.1
 pyuac>=0.0.3
+allure-pytest>=2.13.2
+allure-python-commons>=2.13.2
