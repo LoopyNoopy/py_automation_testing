@@ -22,7 +22,7 @@ from selenium.webdriver import Chrome, ChromeOptions, Remote
 #   They are hard-coded here to keep the example project simple.
 # --------------------------------------------------------------------------------
 
-USE_ULTRAFAST_GRID = True
+USE_ULTRAFAST_GRID = False
 USE_EXECUTION_CLOUD = False
 
 
