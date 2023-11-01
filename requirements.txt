@@ -8,4 +8,4 @@ tqdm>=4.66.1
 pyuac>=0.0.3
 allure-pytest>=2.13.2
 allure-python-commons>=2.13.2
-eyes-selenium>=5.21.0
+eyes-selenium>=5.21.1
