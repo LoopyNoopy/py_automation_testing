@@ -3,6 +3,7 @@ import allure
 
 #https://allurereport.org/docs/frameworks/python/pytest/
 #https://medium.com/testvagrant/generating-allure-reports-in-the-pytest-framework-89dc78a2ca85
+#npm i allure-commandline
 #pytest --alluredir=allure-results test_allure_examples.py
 #npx allure serve allure-results
 
