@@ -1,0 +1,21 @@
+Server command Linux
+sudo java -jar 'PycharmProjects/suite/Testing/Smoke/grid/grid_releases/selenium-server-4.17.0.jar' hub --reject-unsupported-caps true
+
+Win
+java -jar "C:\Grid Node\selenium-server-4.16.1.jar" node --hub http://192.168.122.56:4444/grid/register --selenium-manager true
+
+Linux
+java -jar "/media/daniel/Broken Heart/Java Files/selenium-server-4.16.1.jar" node --hub http://192.168.122.56:4444/grid/register --selenium-manager true
+
+Saucelabs Node
+java -jar "/media/daniel/Broken Heart/Java Files/selenium-server-4.16.1.jar" node --config "/home/daniel/PycharmProjects/suite/Testing/Smoke/grid/node_config/config_sauce.toml"
+
+Selenium Manager
+java -jar "/media/daniel/Broken Heart/Java Files/selenium-server-4.16.1.jar" node --selenium-manager true
+
+Appium Windows Node
+appium --config C:\Users\dburgess\PycharmProjects\suite\Testing\Smoke\grid\appium_config\appium.yml
+java -jar "C:\Users\dburgess\PycharmProjects\suite\Testing\Smoke\grid\grid_releases\selenium-server-4.17.0.jar" node --config "C:\Users\dburgess\PycharmProjects\suite\Testing\Smoke\grid\node_config\local_appium_node.toml" --hub http://192.168.122.56:4444/grid/register --selenium-manager true
+
+Windows No appium
+java -jar "/Users/gimli/PycharmProjects/suite/Testing/Smoke/grid/grid_releases/selenium-server-4.17.0.jar" node  --hub http://192.168.122.56:4444/grid/register --selenium-manager true

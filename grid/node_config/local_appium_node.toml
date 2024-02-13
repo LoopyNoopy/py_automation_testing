@@ -1,0 +1,10 @@
+[server]
+port = 5556
+
+[relay]
+url = "http://192.168.122.100:4723"
+status-endpoint = "/status"
+configs = [
+    "1", "{\"platformName\": \"android\", \"appium:platformVersion\": \"11.0\", \"appium:deviceName\": \"DansAVD\", \"appium:automationName\": \"uiautomator2\"}",
+    "1", "{\"platformName\": \"android\", \"appium:platformVersion\": \"8.1\", \"appium:automationName\": \"uiautomator2\"}"
+]

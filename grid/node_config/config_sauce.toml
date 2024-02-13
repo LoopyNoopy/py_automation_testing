@@ -1,0 +1,19 @@
+[server]
+port = 6666
+
+[node]
+detect-drivers = false
+max-sessions = 100
+
+[relay]
+url = "https://oauth-danieljbburgess-7cb53:da613152-91c7-4560-a99b-2bc0c141d45b@ondemand.us-west-1.saucelabs.com/wd/hub"
+configs = [
+    "100", "{\"browserName\": \"chrome\", \"platformName\": \"Windows 11\" }",
+    "100", "{\"browserName\": \"MicrosoftEdge\", \"platformName\": \"Windows 11\" }",
+    "100", "{\"browserName\": \"firefox\", \"platformName\": \"Windows 11\" }",
+    "100", "{\"browserName\": \"safari\", \"platformName\": \"macOS 10.15\" }",
+    "5",   "{\"browserName\": \"chrome\",\"platformName\": \"ANDROID\",\"appium:platformVersion\": \"11.0\",\"appium:deviceName\": \"Android GoogleAPI Emulator\"}",
+    "5",   "{\"browserName\": \"chrome\",\"platformName\": \"ANDROID\",\"appium:platformVersion\": \"13.0\",\"appium:deviceName\": \"Android GoogleAPI Emulator\"}",
+    "5",   "{\"browserName\": \"chrome\",\"platformName\": \"ANDROID\",\"appium:platformVersion\": \"14.0\",\"appium:deviceName\": \"Android GoogleAPI Emulator\"}",
+    "5",   "{\"browserName\": \"safari\",\"platformName\": \"iOS\",\"appium:platformVersion\": \"17.0\",\"appium:deviceName\": \"iPhone Simulator\"}"
+]
