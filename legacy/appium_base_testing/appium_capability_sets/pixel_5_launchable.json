@@ -1,7 +1,0 @@
-{
-  "platformName": "Android",
-  "appium:platformVersion": "13",
-  "appium:deviceName": "Pixel 5",
-  "appium:automationName": "UIAutomator2",
-  "appium:noReset": true
-}

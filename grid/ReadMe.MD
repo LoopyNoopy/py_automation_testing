@@ -1,26 +1,52 @@
-Python Automation testing
+Selenium Grid Documentation
 ===========
+```
+@/*****************************************************************************(
+@******************************************************************************/
+@******************************************************************************/
+@***************************************************************@@@@@@/********/
+@************************************************************/@@@@@@@@@@/******/
+@******************************************************&@@@@@@@@@@@@@@@@@******/
+@*****************************************************@@@****/@@@@@@@@@@/******/
+@******************************************((/*******/@@#*******&@@@@@/********/
+@**************************************#@@@@@@@@@****/@@#**********************/
+@*************************************#@@@@@@@@@@@@@@@@@#**********************/
+@*************************************/@@@@@@@@@@@***/@@#**********************/
+@***************************************@@@@@@@@#****/@@#**********************/
+@****************************************************/@@#******@@@@@@@@********/
+@*****************************************************@@@#***#@@@@@@@@@@&******/
+@*******************************************************@@@@@@@@@@@@@@@@@******/
+@*************************************************************@@@@@@@@@@*******/
+@*************#@@@@@@@@@@@@@@@@(*********************************#&&%/*********/
+@**********(@@@@@@@@@@@@@@@@@@@@@@@/*******************************************/
+@*********@@@@@@@@@(****/%@@@@@@@@*********************************************/
+@********%@@@@@@@*************(@(***************#@@@@@@@@%/********************/
+@********#@@@@@@@@(*************************&@@@@@@@@@@@@@@@@&*****************/
+@*********&@@@@@@@@@@@@@@@&***************@@@@@@@@&****#@@@@@@@@***************/
+@***********@@@@@@@@@@@@@@@@@@@@&*******/@@@@@@@**********#@@@@@@**************/
+@**************/#@@@@@@@@@@@@@@@@@@/****@@@@@@@////////////@@@@@@%*************/
+@***********************/#@@@@@@@@@@/***@@@@@@@@@@@@@@@@@@@@@@@@@@*************/
+@***********/****************@@@@@@@%***@@@@@@@//////////////////**************/
+@*********%@@@@&************#@@@@@@@/***/@@@@@@@/******************************/
+@*******/@@@@@@@@@@@@@@@@@@@@@@@@@@/******@@@@@@@@@(****/#@@@@#****************/
+@*********/@@@@@@@@@@@@@@@@@@@@@@(**********@@@@@@@@@@@@@@@@@@@&***************/
+@***************%@@@@@@@@@@@&/******************%@@@@@@@@@&(*******************/
+@******************************************************************************/
+@******************************************************************************/
+@******************************************************************************/
+``` 
 
-This repo is what I use to learn and play with different Automation frameworks using the Python language.
+# Brief
 
-This repo primarily uses the following frameworks:
+Our testing system is using Selenium and Appium to control either the Browser or Mobile device respectively.
+Because we are using these frameworks, we are able to take advantage of another product from Selenium called the Selenium Grid.
+The grid allows us to have multiple nodes with different capability sets as examples:
 
-- PyTest
-- Selenium
-- Appium
-- Selenium Grid
-- Allure
+- Node 1 = Windows 11 with Chrome, Firefox, Internet Explorer, Edge 
+- Node 2 = macOS with Chrome, Firefox, Edge and Safari
+- Node 3 = Windows 10 with Chrome, and an Android 14 Virtual Device
 
-# Project requirements
-
-This setup will assume this is running on a Windows operating system. But this can also be used on macOS.
-
-- Selenium Grid running on the host machine
-    - The Appium server is only a requirement if you plan to run tests on mobile devices
-- requirements.txt to be installed
-- Allure report to be installed
-
-# Selenium Grid setup
+This system is able to take the capabilities of each test we write (based on the driver setup) and runs and queues them respectively.
 
 # Grid setup
 
@@ -34,6 +60,7 @@ In order to run either the nodes or the grid yourself need too:
 
 1. Install a JDK from: https://www.oracle.com/java/technologies/downloads/ (Latest is always recommended)
 2. Get the .jar file for the Selenium Grid at: https://github.com/SeleniumHQ/selenium/releases
+    - The one that Mekhane is using will be in `suite\Testing\Smoke\grid\grid_releases`
 3. Once installed, add an environment variable for `JAVA_HOME` - The value of this is the Java installation folder
     - On windows
         1. Start -> Type "Environment variables" - Should come up with `Edit the System Envrioment Variables` - Go in
@@ -56,20 +83,20 @@ Selenium Grid has 3 modes you can use:
 
 The selenium grid has a few arguments you can use while setting it up - below are the ones which are used within SRT
 
-| Argument                    | Value                                    | Description                                                                                                                                           |
-|-----------------------------|------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `--reject-unsupported-caps` | true                                     | If the Grid gets capabilities it doesn't support instantly reject the test.                                                                           | 
-| `--selenium-manager`        | true                                     | Will automatically detect what web browsers can run on the system, and will download the browsers and drivers required during the running of the test |
-| `--hub`                     | http://hub.ip.address:4444/grid/register | Used exclusively by nodes so it can connect to the hub                                                                                                |
-| `node`                      | node                                     | Specifies its being run in node mode                                                                                                                  |
-| `hub`                       | hub                                      | Specifies its being run in hub mode                                                                                                                   |
-| `standalone`                | standalone                               | Specifies its being run in standalone mode                                                                                                            |
-| `--config`                  | filepath                                 | Allows the use of a configuration file (Used to setup the relay to an Appium server                                                                   |
+| Argument                    | Value                                   | Description                                                                                                                                            |
+|-----------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `--reject-unsupported-caps` | true                                    | If the Grid gets capabilities it doesn't support instantly reject the test.                                                                            | 
+| `--selenium-manager`        | true                                    | Will automatically detect what web browsers can run on the system, and will download the browsers and drivered required during the running of the test |
+| `--hub`                     | http://Mekhane.local:4444/grid/register | Used exclusively by nodes so it can connect to the hub                                                                                                 |
+| `node`                      | node                                    | Specifies its being run in node mode                                                                                                                   |
+| `hub`                       | hub                                     | Specifies its being run in hub mode                                                                                                                    |
+| `standalone`                | standalone                              | Specifies its being run in standalone mode                                                                                                             |
+| `--config`                  | filepath                                | Allows the use of a configuration file (Used to setup the relay to an Appium server                                                                    |
 
 ### Example
 
 ```commandline
-java -jar "C:\path\to\selenium-server-4.21.0.jar" standalone --reject-unsupported-caps true --selenium-manager true --config "C:\py_automation_testing\grid\node_config\local_appium_node.toml"
+java -jar "suite\Testing\Smoke\grid\grid_releases\selenium-server-4.21.0.jar" standalone --reject-unsupported-caps true --selenium-manager true --config "D:\Repo\suite\Testing\Smoke\grid\node_config\local_appium_node.toml"
 ```
 
 ## Standalone
@@ -77,7 +104,7 @@ java -jar "C:\path\to\selenium-server-4.21.0.jar" standalone --reject-unsupporte
 If you want to run the Grid standalone you essentially use the following command:
 
 ```commandline
-java -jar "C:\path\to\selenium-server-4.21.0.jar" standalone --reject-unsupported-caps true --selenium-manager true
+java -jar "suite\Testing\Smoke\grid\grid_releases\selenium-server-4.21.0.jar" standalone --reject-unsupported-caps true --selenium-manager true
 ```
 
 Just remember to change the file path to the .jar file for the absolute path.
@@ -90,17 +117,20 @@ You should see the Grid UI with an active node of what your PC is capable of.
 Also note that the command above will **only** show browser capabilities - for mobile devices you will need to add a
 config file to relay to an Appium server which we will go through later in the document.
 
-## Hub
+## Hub (Used on Mekhane)
 
 Hub mode allows you to connect nodes which can have different capability sets dependent on the device that they are
 running (I.e: Windows 11, macOS 14, Linux etc)
 Using a Grid Hub means that in the test suite, we only need to connect to one machine that will distribute our tests
 across all the nodes instead of connecting to each one individually.
 
+Whilst you can use this section as a bases to set up your own hub - this section will be tailored for the current Hub
+running on Mekhane.
+
 1. Open a console window
 2. Run the following command
    ```commandline
-   sudo java -jar 'C:\path\to\selenium-server-4.21.0.jar' hub --reject-unsupported-caps true
+   sudo java -jar 'PycharmProjects/suite/Testing/Smoke/grid/grid_releases/selenium-server-4.21.0.jar' hub --reject-unsupported-caps true
    ```
 
    Command rundown
@@ -110,9 +140,11 @@ across all the nodes instead of connecting to each one individually.
    - `hub` = Specify that the Grid is to run in "Hub" mode
    - `--reject-unsupported-caps true` = If the hub gets a capability request that none of the nodes have, reject the request
 
-     - This is done as if not, when you got the capability wrong the test would get stuck in the queue for a bit
+     - This was done as if not, when you got the capability wrong the test would get stuck in the queue for a bit
 
-3. If done correctly, you should be able to go too: `hub.ip.address:4444/ui` and see that the Grid is running
+3. If done correctly, you should be able to go too: `mekhane.local:4444/ui` and see that the Grid is running
+
+    - At the time of writing, there is a server currently running at: `mekhane.local:4444/ui`
 
 ## Node
 
@@ -122,7 +154,7 @@ Nodes need to be connected to a hub, the command is very similar to starting Gri
 difference is using the `--hub` argument to specify the IP / Hostname of the grid you want to connect too.
 
 ```commandline
-java -jar "C:\path\to\selenium-server-4.21.0.jar" node --hub http://hub.ip.address:4444/grid/register --selenium-manager true
+java -jar "C:\Grid Node\selenium-server-4.21.0.jar" node --hub http://mekhane.local:4444/grid/register --selenium-manager true
 ```
 
 # Set up the Appium server on a node
@@ -178,6 +210,8 @@ Basically, it becomes an absolute nightmare to deal with an Appium server if the
     - `Android SDK Build-Tools` - This will have a random number and a `rc` number in the name
     - `Android SDK Command-line Tools (latest)`
     - `Android Emulator`
+    - `Android Emulator hypervisor driver (installer)` - This might need virtualization enabled in the BIOS before this
+      will install
     - `Android SDK Platform-Tools`
 7. Once you have made your selection click `Apply` - This will start the installation process.
 8. Once installed, add an environment variable for `ANDROID_HOME` - The value of this is Android SDK Location which you
@@ -200,7 +234,7 @@ From this point you can either:
       precise steps on how to enable, what I can give is the following tips:
         - It will more than likely be in the "Advanced" section if there is one
         - It will be under CPU
-        - When in windows, you can verify if it's enabled by pressing `Ctrl` + `Shift` + `Esc` to open task manager ->
+        - When in windows, you can verify if its enabled by pressing `Ctrl` + `Shift` + `Esc` to open task manager ->
           Click on the `Perfomance` tab and select `CPU` -> You should see `Virtualisation:` to confirm if its enabled
 - Enable `Developer Options` on your Android device and connect it via a USB cable
 
@@ -232,7 +266,7 @@ In order for the Node to tell the Hub that it can take tests for mobile devices,
 - Tell it is going to act as a relay for the appium server running on the same machine
 
 Below is an example of what the toml file for the node config looks like - This example can be found
-at `grid/node_config/local_appium_node.toml`
+at `D:\Repo\suite\Testing\Smoke\grid\node_config\local_appium_node.toml`
 
 ```toml
 [server]
@@ -292,14 +326,14 @@ shows on your device.
 
 ### 2. Start the Appium server
 
-In the repo you will find: `grid/appium_config/appium.yml`
+In the repo you will find: `suite\Testing\Smoke\grid\appium_config\appium.yml`
 
 All this does is specify port 4723 and that it is using the UiAutomator 2 driver for Android
 
 In a command line, run the following - make sure to put the absolute path in for the .yml file
 
 ```commandline
-appium --config grid/appium_config/appium.yml
+appium --config D:\Repo\suite\Testing\Smoke\grid\appium_config\appium.yml
 ``` 
 
 ### 3. Start Selenium with the Appium relay
@@ -312,13 +346,13 @@ appium --config grid/appium_config/appium.yml
     Standalone
     
     ```commandline
-    java -jar "C:\path\to\selenium-server-4.21.0.jar" standalone --reject-unsupported-caps true --selenium-manager true --config "C:\path\to\local_appium_node.toml"
+    java -jar "C:\Users\dburgess\PycharmProjects\suite\Testing\Smoke\grid\grid_releases\selenium-server-4.21.0.jar" standalone --reject-unsupported-caps true --selenium-manager true --config "D:\Repo\suite\Testing\Smoke\grid\node_config\local_appium_node.toml"
     ```
     
     Node
     
     ```commandline
-    java -jar "C:\path\to\selenium-server-4.21.0.jar" node --config "C:\path\to\local_appium_node.toml" --hub http://hub.ip.address:4444/grid/register --selenium-manager true
+    java -jar "C:\Users\dburgess\PycharmProjects\suite\Testing\Smoke\grid\grid_releases\selenium-server-4.21.0.jar" node --config "C:\Users\dburgess\PycharmProjects\suite\Testing\Smoke\grid\node_config\local_appium_node.toml" --hub http://Mekhane.local:4444/grid/register --selenium-manager true
     ``` 
 
 3. Check the "UI link" of your Grid hub your node should appear with all the browsers your device can do and any Android

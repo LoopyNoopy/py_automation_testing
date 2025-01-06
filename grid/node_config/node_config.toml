@@ -1,0 +1,20 @@
+[server]
+port = 9999
+
+[relay]
+url = "http://127.0.0.1:4723"
+status-endpoint = "/status"
+configs = [
+    "1", "{\"platformName\": \"android\", \"appium:platformVersion\": \"11\", \"appium:automationName\": \"UIAutomator2\"}"
+]
+
+[node]
+driver-configuration = [
+    'display-name="Chrome Stable" max-sessions=5 webdriver-path="C:\Users\dburgess\PycharmProjects\suite\Testing\Smoke\grid\node_config\generated_toml/chrome_stable/chromedriver" stereotype="{"browserName": "chrome", "browserVersion": "stable", "selenium:options": {"args": ["--selenium-manager", "true"]}}"',
+    'display-name="Chrome Beta" max-sessions=5 webdriver-path="C:\Users\dburgess\PycharmProjects\suite\Testing\Smoke\grid\node_config\generated_toml/chrome_beta/chromedriver" stereotype="{"browserName": "chrome", "browserVersion": "beta", "selenium:options": {"args": ["--selenium-manager", "true"]}}"',
+    'display-name="Chrome Dev" max-sessions=5 webdriver-path="C:\Users\dburgess\PycharmProjects\suite\Testing\Smoke\grid\node_config\generated_toml/chrome_dev/chromedriver" stereotype="{"browserName": "chrome", "browserVersion": "dev", "selenium:options": {"args": ["--selenium-manager", "true"]}}"',
+    'display-name="Chrome Canary" max-sessions=5 webdriver-path="C:\Users\dburgess\PycharmProjects\suite\Testing\Smoke\grid\node_config\generated_toml/chrome_canary/chromedriver" stereotype="{"browserName": "chrome", "browserVersion": "canary", "selenium:options": {"args": ["--selenium-manager", "true"]}}"',
+]
+nodeTimeout = 120
+maxSession = 10
+    
