@@ -1,0 +1,6 @@
+{
+  "appium:automationName": "uiautomator2",
+  "platformName": "Android",
+  "appium:app": "C:\\Users\\dburgess\\Downloads\\com.SilhouetteSoftware.SilhouetteGo.apk",
+  "appium:appActivity": "crc64a817c78ca7edff55.SplashActivity"
+}

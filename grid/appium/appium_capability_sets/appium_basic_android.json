@@ -1,0 +1,4 @@
+{
+  "appium:automationName": "uiautomator2",
+  "platformName": "Android"
+}
